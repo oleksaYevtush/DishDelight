@@ -14,7 +14,7 @@
     }
 
     @media screen and (min-width: 1080px){
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
   
@@ -22,7 +22,7 @@
     .category-itm{
         background-color: $clr-white;
         position: relative;
-        margin: 12px auto;
+        margin: 15px auto;
         box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
         border-radius: 3px;
         box-shadow: rgba(99, 99, 99, 0.09) 0px 2px 8px 0px;
@@ -44,9 +44,9 @@
         }
         &-title{
             position: absolute;
-            top: 6px;
-            right: 6px;
-            padding: 1px 8px;
+            top: 50px;
+            align-items: center;
+            padding: 8px 8px;
             border-radius: 3px;
             box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
             transition: $transition;
@@ -55,7 +55,7 @@
         &:hover{
             .category-itm-title{
                 opacity: 1;
-                border-radius: 2px;
+                border-radius: 26px;
             }
         }
     }

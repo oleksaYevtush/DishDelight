@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import "./Header.scss";
-import { BsSearch } from "react-icons/bs";
+import { MdSavedSearch } from "react-icons/md";
 import { useMealContext } from '../../context/mealContext';
 import { useNavigate } from 'react-router-dom';
 import { startFetchMealsBySearch } from '../../actions/mealsActions';
@@ -31,7 +31,7 @@ const SearchForm = () => {
     <form className='search-form flex align-center' onSubmit={(e) => handleSearchResult(e)}>
       <input type = "text" className='form-control-input text-dark-gray fs-15' placeholder='Recipe search ...' onChange={(e) => handleSearchTerm(e)} />
       <button type = "submit" className='form-submit-btn text-white text-uppercase fs-14'>
-        <BsSearch className='btn-icon' size = {20} />
+        <MdSavedSearch className='btn-icon' size = {40} />
       </button>
     </form>
   )

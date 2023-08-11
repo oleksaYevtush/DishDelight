@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Meal.scss";
-import { FaUtensilSpoon } from "react-icons/fa";
-import { AiFillHome } from "react-icons/ai";
+import { MdLoyalty } from "react-icons/md";
+import { MdKitchen } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { BiChevronsRight } from "react-icons/bi";
 import { AiOutlineCheckSquare } from 'react-icons/ai';
@@ -20,7 +20,7 @@ const MealSingle = ({meal}) => {
           <ul className='flex align-center my-2'>
             <li className='breadcrumb-item'>
               <Link to = "/" className='flex align-center'>
-                <AiFillHome size = {22} />
+                <MdKitchen size = {26} />
               </Link>
             </li>
             <li className='flex align-center mx-1'>
@@ -32,7 +32,7 @@ const MealSingle = ({meal}) => {
           </ul>
         </div>
 
-        <div className='sc-title'>Meal Details</div>
+        <div className='sc-title'>Recipe</div>
         <section className='sc-details bg-white'>
           <div className='details-head grid'>
             <div className='details-img'>
@@ -88,7 +88,7 @@ const MealSingle = ({meal}) => {
                   meal?.measures?.map((measure, idx) => (
                     <li key = {idx} className = "fs-14 flex align-end">
                       <span className='li-icon fs-12 text-mint'>
-                        <FaUtensilSpoon />
+                        <MdLoyalty />
                       </span>
                       <span className='li-text fs-15 fw-6 op-09'>{measure}</span>
                     </li>
